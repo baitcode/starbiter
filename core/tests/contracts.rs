@@ -39,6 +39,17 @@ pub fn setup_log() {
 }
 
 #[tokio::test]
+async fn test_zzz() {
+    let z = Felt::from_raw([
+        502562008147966918,
+        18446744073709551615,
+        18446744073709551615,
+        17696389056366564951,
+    ]);
+    println!("Z: {:?}", z);
+}
+
+#[tokio::test]
 async fn test_create_account_and_use_it_to_deploy_udc_counter_contract() {
     setup_log();
 
